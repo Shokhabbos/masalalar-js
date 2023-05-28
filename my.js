@@ -27,5 +27,22 @@ function trimEl (str){
  
 }
 function noSpace(x){return x.split(' ').join('')}
+
+function updateLight(current) {
+  
+  //your code here!
+  switch (current){
+      case "green" :
+      return "yellow";
+      break;
+      case "yellow" :
+      return "red";
+      break;
+      case "red" :
+      return "green"
+      break
+  }
+
+}
 let resutl = noSpace("adb bd bd d")
 console.log(resutl,"a");
