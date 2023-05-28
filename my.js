@@ -1,11 +1,10 @@
 const reverseSeq = n => {
   let arr =[]
   for(let i = n; i > 0; i--){
-     console.log(arr.push(i), i, n);
+     arr.push(i)
   }
   return arr
 };
-console.log(reverseSeq(5));
 
 
 function findNextSquare(sq) {
@@ -15,3 +14,18 @@ function findNextSquare(sq) {
   }
   return -1;
 }
+
+
+
+
+function trimEl (str){
+  let newStr = []
+ for(let i = 0; i < str.length;i++){
+  str[i] !== " " ? newStr.push(str[i]) : str[i]
+ }
+ return newStr.join("")
+ 
+}
+function noSpace(x){return x.split(' ').join('')}
+let resutl = noSpace("adb bd bd d")
+console.log(resutl,"a");
