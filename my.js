@@ -44,5 +44,15 @@ function updateLight(current) {
   }
 
 }
-let resutl = noSpace("adb bd bd d")
-console.log(resutl,"a");
+
+let text = 'The quick brown fox jumps over the lazy dog.'
+// function reverseText (item) {
+
+function myReverse(str) { 
+  return str.split("").reverse().join("").split(" ").reverse().join(" ");
+ } 
+
+//  str.split("").reverse().join("").split(" ").reverse().join(" ");
+// }
+// let resutl = reverseText()
+console.log(myReverse(text),"a");
