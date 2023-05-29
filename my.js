@@ -56,3 +56,20 @@ function myReverse(str) {
 // }
 // let resutl = reverseText()
 console.log(myReverse(text),"a");
+
+
+const a = [ism: 'Elbek', 'yosh']
+a['ism'] = 'Kamol'
+
+
+console.log(a);
+
+
+function isDivideBy(number, x, y) {
+  if (number % x === 0 && number % y === 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(isDivideBy(12, -1, 4));;
