@@ -133,15 +133,29 @@
 // console.log(untillNumber(6));
 10, 3;
 0 - 10; //3,6,9
-function nimadir(n, x) {
-  let a  = []
-  for (let i = 1; i <= n; i++) {
-    console.log(i, n);
-    if ( i % x === 0) {
-       a.push(i)
-    }
-  }
-  return a;
-}
+// function nimadir(n, x) {
+//   let a  = []
+//   for (let i = 1; i <= n; i++) {
+//     console.log(i, n);
+//     if ( i % x === 0) {
+//        a.push(i)
+//     }
+//   }
+//   return a;
+// }
 
-console.log(nimadir(10, 3));
+// console.log(nimadir(10, 3));
+// let username = prompt("Ism kiriting:")
+// let surname = prompt("Familyangizni kiriting:")
+// console.log(`${username} ${surname}`)
+
+let number = prompt("Son kiriting:")
+let fruits = prompt("Meva nomini kiriting:")
+// console.log(`${username} ${surname}`)
+let str = ''
+for(let i = 1;i<= number;i++){
+  str +=fruits
+
+}
+alert(str);
+
