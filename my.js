@@ -180,36 +180,48 @@
 // console.log(reverseWords("The quick brown fox jumps"));
 
 
-// function reverseStr(number) {
+// // function reverseStr(number) {
 
-//   let str = ""
-//   for (let i = number.length -1; i >= 0; i--){
-//     str = str + number[i]
-//   }
-//     return str
-//   }
-// console.log(reverseStr(6));
+// //   let str = ""
+// //   for (let i = number.length -1; i >= 0; i--){
+// //     str = str + number[i]
+// //   }
+// //     return str
+// //   }
+// // console.log(reverseStr(6));
 
-let arr2 = [["salom", 2, 3, "xayr",5, 6, null], [2], 3, 5, "Hello"]
+// let arr2 = [["salom", 2, 3, "xayr",5, 6, null], [2], 3, 5, "Hello"]
+// // let newArr = []
+// // for(let i = 0; i< arr.length;i++){
+// //   console.log(arr[i], i);
+// //   if(i % 2  == 0){
+// //     newArr.push(arr[i])
+
+// //   }
+// // }
+// function removeEveryOther(arr){
 // let newArr = []
-// for(let i = 0; i< arr.length;i++){
-//   console.log(arr[i], i);
-//   if(i % 2  == 0){
-//     newArr.push(arr[i])
-
-//   }
-// }
-function removeEveryOther(arr){
-let newArr = []
-  for(let i = 0; i< arr.length;i++){
-    if(i % 2  == 0){
-      newArr.push(arr[i])
+//   for(let i = 0; i< arr.length;i++){
+//     if(i % 2  == 0){
+//       newArr.push(arr[i])
   
-    }
+//     }
+//   }
+//   return newArr
+
+
+// }
+
+// console.log(removeEveryOther(arr2));
+
+
+function isSquare (num){
+  if(Math.sqrt(num) % 1 !== 0){
+    return false
+  }else{
+    return true
   }
-  return newArr
-
-
 }
+// let num = 25
 
-console.log(removeEveryOther(arr2));
+console.log(isSquare(-25) );
