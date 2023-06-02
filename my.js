@@ -163,80 +163,105 @@
 // let str = "salom qalesan "
 // console.log(str.split(" "));
 
-
-// function reverseWords(word) {
-//   let str = "";
-//   // let arr = word.split(" ");
-//   for(let i = 0 ; i < arr.length; i++){
-//       for(let j = arr[i].length-1; j >= 0; j--){
-//           console.log(str += arr[i][j]);;
-//       }
-//       str += " ";
-//   }
-  
-//    return str;
-// }
-
-// console.log(reverseWords("The quick brown fox jumps"));
-
-
-// // function reverseStr(number) {
-
-// //   let str = ""
-// //   for (let i = number.length -1; i >= 0; i--){
-// //     str = str + number[i]
+// // function reverseWords(word) {
+// //   let str = "";
+// //   // let arr = word.split(" ");
+// //   for(let i = 0 ; i < arr.length; i++){
+// //       for(let j = arr[i].length-1; j >= 0; j--){
+// //           console.log(str += arr[i][j]);;
+// //       }
+// //       str += " ";
 // //   }
-// //     return str
-// //   }
-// // console.log(reverseStr(6));
 
-// let arr2 = [["salom", 2, 3, "xayr",5, 6, null], [2], 3, 5, "Hello"]
+// //    return str;
+// // }
+
+// // console.log(reverseWords("The quick brown fox jumps"));
+
+// // // function reverseStr(number) {
+
+// // //   let str = ""
+// // //   for (let i = number.length -1; i >= 0; i--){
+// // //     str = str + number[i]
+// // //   }
+// // //     return str
+// // //   }
+// // // console.log(reverseStr(6));
+
+// // let arr2 = [["salom", 2, 3, "xayr",5, 6, null], [2], 3, 5, "Hello"]
+// // // let newArr = []
+// // // for(let i = 0; i< arr.length;i++){
+// // //   console.log(arr[i], i);
+// // //   if(i % 2  == 0){
+// // //     newArr.push(arr[i])
+
+// // //   }
+// // // }
+// // function removeEveryOther(arr){
 // // let newArr = []
-// // for(let i = 0; i< arr.length;i++){
-// //   console.log(arr[i], i);
-// //   if(i % 2  == 0){
-// //     newArr.push(arr[i])
+// //   for(let i = 0; i< arr.length;i++){
+// //     if(i % 2  == 0){
+// //       newArr.push(arr[i])
 
+// //     }
+// //   }
+// //   return newArr
+
+// // }
+
+// // console.log(removeEveryOther(arr2));
+
+// // function isSquare (num){
+// //   if(Math.sqrt(num) % 1 !== 0){
+// //     return false
+// //   }else{
+// //     return true
 // //   }
 // // }
-// function removeEveryOther(arr){
-// let newArr = []
-//   for(let i = 0; i< arr.length;i++){
-//     if(i % 2  == 0){
-//       newArr.push(arr[i])
-  
+// // // let num = 25
+
+// // console.log(isSquare(-25) );
+
+// // let str = "auieog ghui i o e"
+// function isUnli(str){
+//   let sum = 0
+//   for(let i = 0; i< str.length;i++){
+//     if(str[i] === "i" || str[i] === "a" ||str[i] === "u" ||str[i] === "o" ||str[i] === "e" ){
+//       sum++
 //     }
-//   }
-//   return newArr
 
+//   }
+//   return sum
 
 // }
 
-// console.log(removeEveryOther(arr2));
+// // console.log(isUnli("Hello Najott"));
+// function isNextsquare (n) {
+//   let z;
+//   if (Math.sqrt(n)%1==0) {
+//     z= (Math.pow(n,1/2)+1)**2;
 
-
-// function isSquare (num){
-//   if(Math.sqrt(num) % 1 !== 0){
-//     return false
-//   }else{
-//     return true
 //   }
+//   return z;
 // }
-// // let num = 25
+// console.log(isNextsquare(25));
 
-// console.log(isSquare(-25) );
-
-// let str = "auieog ghui i o e"
-function isUnli(str){
-  let sum = 0
-  for(let i = 0; i< str.length;i++){
-    if(str[i] === "i" || str[i] === "a" ||str[i] === "u" ||str[i] === "o" ||str[i] === "e" ){
-      sum++
-    }
-
+let str = "Salom Dunyo qalesan";
+function reverseStrFun( str){
+  let strToArray = str.split(" ");
+let reverseStr = '';
+for (let i = 0; i < strToArray.length; i++) {
+  // console.log(strToArray[i]);
+  for (let j = strToArray[i].length - 1; j >= 0; j--) {
+    reverseStr += strToArray[i][j];
+    // console.log(strToArray[i][j]);
   }
-  return sum
+  reverseStr+= ' '
 
+  // console.log(reverseStr);
+}
+let a = (reverseStr.split(' ').slice(0,-1))
+return a
 }
 
-console.log(isUnli("Hello Najott"));
+console.log(reverseStrFun("Nihoyatda gozal"));
