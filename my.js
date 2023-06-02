@@ -215,13 +215,28 @@
 // console.log(removeEveryOther(arr2));
 
 
-function isSquare (num){
-  if(Math.sqrt(num) % 1 !== 0){
-    return false
-  }else{
-    return true
-  }
-}
-// let num = 25
+// function isSquare (num){
+//   if(Math.sqrt(num) % 1 !== 0){
+//     return false
+//   }else{
+//     return true
+//   }
+// }
+// // let num = 25
 
-console.log(isSquare(-25) );
+// console.log(isSquare(-25) );
+
+// let str = "auieog ghui i o e"
+function isUnli(str){
+  let sum = 0
+  for(let i = 0; i< str.length;i++){
+    if(str[i] === "i" || str[i] === "a" ||str[i] === "u" ||str[i] === "o" ||str[i] === "e" ){
+      sum++
+    }
+
+  }
+  return sum
+
+}
+
+console.log(isUnli("Hello Najott"));
