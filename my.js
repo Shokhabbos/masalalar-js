@@ -149,13 +149,32 @@
 // let surname = prompt("Familyangizni kiriting:")
 // console.log(`${username} ${surname}`)
 
-let number = prompt("Son kiriting:")
-let fruits = prompt("Meva nomini kiriting:")
-// console.log(`${username} ${surname}`)
-let str = ''
-for(let i = 1;i<= number;i++){
-  str +=fruits
+// let number = prompt("Son kiriting:")
+// let fruits = prompt("Meva nomini kiriting:")
+// // console.log(`${username} ${surname}`)
+// let str = ''
+// for(let i = 1;i<= number;i++){
+//   str +=fruits
 
+// }
+// alert(str);
+
+let arr = ["behi", "anor", "shaftoli"];
+let str = "salom qalesan "
+console.log(str.split(" "));
+
+
+function reverseWords(word) {
+  let str = "";
+  let arr = word.split(" ");
+  for(let i = 0 ; i < arr.length; i++){
+      for(let j = arr[i].length-1; j >= 0; j--){
+          str += arr[i][j];
+      }
+      str += " ";
+  }
+  
+   return str;
 }
-alert(str);
 
+console.log(reverseWords("The quick brown fox jumps"));
