@@ -109,16 +109,39 @@
 // }
 // console.log(str);
 
-let someArr = [1, "Olma", "Anor","2",3, 4];
-function checkTypeOfNumber (arr){
-  let sum = 0
-for (let i = 0; i < arr.length; i++) {
-  if(typeof arr[i] == 'number'){
-    sum += arr[i]
+// let someArr = [1, "Olma", "Anor","2",3, 4];
+// function checkTypeOfNumber (arr){
+//   let sum = 0
+// for (let i = 0; i < arr.length; i++) {
+//   if(typeof arr[i] == 'number'){
+//     sum += arr[i]
 
+//   }
+// }
+// return sum
+// }
+
+// console.log(checkTypeOfNumber([1,2,3]));
+
+// function untillNumber(num){
+// let x = 1
+// for(let i = 1; i<= num; i++){
+//   x*=i
+// }
+// return x
+// }
+// console.log(untillNumber(6));
+10, 3;
+0 - 10; //3,6,9
+function nimadir(n, x) {
+  let a  = []
+  for (let i = 1; i <= n; i++) {
+    console.log(i, n);
+    if ( i % x === 0) {
+       a.push(i)
+    }
   }
-}
-return sum
+  return a;
 }
 
-console.log(checkTypeOfNumber([1,2,3]));
+console.log(nimadir(10, 3));
