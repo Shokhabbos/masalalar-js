@@ -96,85 +96,120 @@
 
 // console.log(x(arr));
 
-// let str = "Robert Sharma   GOod"
-// // str = Array(str)
-// for(let i = 0; i <str.length; i++){
-//   console.log(str[i], "saaall");
-//   if(str[i] === " "){
+// // let str = "Robert Sharma   GOod"
+// // // str = Array(str)
+// // for(let i = 0; i <str.length; i++){
+// //   console.log(str[i], "saaall");
+// //   if(str[i] === " "){
 
-//   }else{
-//     console.log(2);
-//   }
+// //   }else{
+// //     console.log(2);
+// //   }
 
-// }
-// console.log(str);
+// // }
+// // console.log(str);
 
-// let someArr = [1, "Olma", "Anor","2",3, 4];
-// function checkTypeOfNumber (arr){
-//   let sum = 0
-// for (let i = 0; i < arr.length; i++) {
-//   if(typeof arr[i] == 'number'){
-//     sum += arr[i]
+// // let someArr = [1, "Olma", "Anor","2",3, 4];
+// // function checkTypeOfNumber (arr){
+// //   let sum = 0
+// // for (let i = 0; i < arr.length; i++) {
+// //   if(typeof arr[i] == 'number'){
+// //     sum += arr[i]
 
-//   }
-// }
-// return sum
-// }
+// //   }
+// // }
+// // return sum
+// // }
 
-// console.log(checkTypeOfNumber([1,2,3]));
+// // console.log(checkTypeOfNumber([1,2,3]));
 
-// function untillNumber(num){
-// let x = 1
-// for(let i = 1; i<= num; i++){
-//   x*=i
-// }
-// return x
-// }
-// console.log(untillNumber(6));
-10, 3;
-0 - 10; //3,6,9
-// function nimadir(n, x) {
-//   let a  = []
-//   for (let i = 1; i <= n; i++) {
-//     console.log(i, n);
-//     if ( i % x === 0) {
-//        a.push(i)
-//     }
-//   }
-//   return a;
-// }
+// // function untillNumber(num){
+// // let x = 1
+// // for(let i = 1; i<= num; i++){
+// //   x*=i
+// // }
+// // return x
+// // }
+// // console.log(untillNumber(6));
+// 10, 3;
+// 0 - 10; //3,6,9
+// // function nimadir(n, x) {
+// //   let a  = []
+// //   for (let i = 1; i <= n; i++) {
+// //     console.log(i, n);
+// //     if ( i % x === 0) {
+// //        a.push(i)
+// //     }
+// //   }
+// //   return a;
+// // }
 
-// console.log(nimadir(10, 3));
-// let username = prompt("Ism kiriting:")
-// let surname = prompt("Familyangizni kiriting:")
-// console.log(`${username} ${surname}`)
-
-// let number = prompt("Son kiriting:")
-// let fruits = prompt("Meva nomini kiriting:")
+// // console.log(nimadir(10, 3));
+// // let username = prompt("Ism kiriting:")
+// // let surname = prompt("Familyangizni kiriting:")
 // // console.log(`${username} ${surname}`)
-// let str = ''
-// for(let i = 1;i<= number;i++){
-//   str +=fruits
 
-// }
-// alert(str);
+// // let number = prompt("Son kiriting:")
+// // let fruits = prompt("Meva nomini kiriting:")
+// // // console.log(`${username} ${surname}`)
+// // let str = ''
+// // for(let i = 1;i<= number;i++){
+// //   str +=fruits
 
-let arr = ["behi", "anor", "shaftoli"];
-let str = "salom qalesan "
-console.log(str.split(" "));
+// // }
+// // alert(str);
+
+// let arr = ["behi", "anor", "shaftoli"];
+// let str = "salom qalesan "
+// console.log(str.split(" "));
 
 
-function reverseWords(word) {
-  let str = "";
-  let arr = word.split(" ");
-  for(let i = 0 ; i < arr.length; i++){
-      for(let j = arr[i].length-1; j >= 0; j--){
-          str += arr[i][j];
-      }
-      str += " ";
-  }
+// function reverseWords(word) {
+//   let str = "";
+//   // let arr = word.split(" ");
+//   for(let i = 0 ; i < arr.length; i++){
+//       for(let j = arr[i].length-1; j >= 0; j--){
+//           console.log(str += arr[i][j]);;
+//       }
+//       str += " ";
+//   }
   
-   return str;
+//    return str;
+// }
+
+// console.log(reverseWords("The quick brown fox jumps"));
+
+
+// function reverseStr(number) {
+
+//   let str = ""
+//   for (let i = number.length -1; i >= 0; i--){
+//     str = str + number[i]
+//   }
+//     return str
+//   }
+// console.log(reverseStr(6));
+
+let arr2 = [["salom", 2, 3, "xayr",5, 6, null], [2], 3, 5, "Hello"]
+// let newArr = []
+// for(let i = 0; i< arr.length;i++){
+//   console.log(arr[i], i);
+//   if(i % 2  == 0){
+//     newArr.push(arr[i])
+
+//   }
+// }
+function removeEveryOther(arr){
+let newArr = []
+  for(let i = 0; i< arr.length;i++){
+    if(i % 2  == 0){
+      newArr.push(arr[i])
+  
+    }
+  }
+  return newArr
+
+
 }
 
-console.log(reverseWords("The quick brown fox jumps"));
+console.log(removeEveryOther(arr2));
