@@ -277,3 +277,7 @@ function findFactors(n) {
 }
 
 console.log(findFactors(12));
+
+function theBiggestNumber(a){
+  return Number(a.toString().split('').sort().reverse().join(''))
+}
