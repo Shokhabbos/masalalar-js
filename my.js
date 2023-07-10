@@ -246,22 +246,34 @@
 // }
 // console.log(isNextsquare(25));
 
-let str = "Salom Dunyo qalesan";
-function reverseStrFun( str){
-  let strToArray = str.split(" ");
-let reverseStr = '';
-for (let i = 0; i < strToArray.length; i++) {
-  // console.log(strToArray[i]);
-  for (let j = strToArray[i].length - 1; j >= 0; j--) {
-    reverseStr += strToArray[i][j];
-    // console.log(strToArray[i][j]);
+// let str = "Salom Dunyo qalesan";
+// function reverseStrFun( str){
+//   let strToArray = str.split(" ");
+// let reverseStr = '';
+// for (let i = 0; i < strToArray.length; i++) {
+//   // console.log(strToArray[i]);
+//   for (let j = strToArray[i].length - 1; j >= 0; j--) {
+//     reverseStr += strToArray[i][j];
+//     // console.log(strToArray[i][j]);
+//   }
+//   reverseStr+= ' '
+
+//   // console.log(reverseStr);
+// }
+// let a = (reverseStr.split(' ').slice(0,-1))
+// return a
+// }
+
+// console.log(reverseStrFun("Nihoyatda gozal"));
+
+function findFactors(n) {
+  let factors = [];
+  for (let i = 1; i <= n; i++) {
+    if (n % i === 0) {
+      factors.push(i);
+    }
   }
-  reverseStr+= ' '
-
-  // console.log(reverseStr);
-}
-let a = (reverseStr.split(' ').slice(0,-1))
-return a
+  return factors;
 }
 
-console.log(reverseStrFun("Nihoyatda gozal"));
+console.log(findFactors(12));
