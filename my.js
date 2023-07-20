@@ -70,21 +70,21 @@ function removeLastEl (str) {
 
 console.log(removeLastEl("Hello! World"));
 
-// // let arr = [1, 2, 3, 4, 5, 5, 1, 2];
-// // function x(arr) {
-// //   let a = 0;
-// //   let b = 0;
-// //   for (let i = 0; i < arr.length; i++) {
-// //     if (arr[i] % 2 === 0) {
-// //       a += arr[i];
-// //     } else {
-// //       b += arr[i];
-// //     }
-// //   }
-// //   return [a, b];
-// // }
+let arr = [1, 2, 3, 4, 5, 5, 1, 2];
+function x(arr) {
+  let a = 0;
+  let b = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 === 0) {
+      a += arr[i];
+    } else {
+      b += arr[i];
+    }
+  }
+  return [a, b];
+}
 
-// // console.log(x(arr));
+console.log(x(arr));
 
 // // // let str = "Robert Sharma   GOod"
 // // // // str = Array(str)
