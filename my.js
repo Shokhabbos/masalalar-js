@@ -86,18 +86,18 @@ function x(arr) {
 
 console.log(x(arr));
 
-// // // let str = "Robert Sharma   GOod"
-// // // // str = Array(str)
-// // // for(let i = 0; i <str.length; i++){
-// // //   console.log(str[i], "saaall");
-// // //   if(str[i] === " "){
+let str = "Robert Sharma   GOod"
+// str = Array(str)
+for(let i = 0; i <str.length; i++){
+  console.log(str[i], "saaall");
+  if(str[i] === " "){
 
-// // //   }else{
-// // //     console.log(2);
-// // //   }
+  }else{
+    console.log(2);
+  }
 
-// // // }
-// // // console.log(str);
+}
+console.log(str);
 
 // // // let someArr = [1, "Olma", "Anor","2",3, 4];
 // // // function checkTypeOfNumber (arr){
