@@ -99,19 +99,19 @@ for(let i = 0; i <str.length; i++){
 }
 console.log(str);
 
-// // // let someArr = [1, "Olma", "Anor","2",3, 4];
-// // // function checkTypeOfNumber (arr){
-// // //   let sum = 0
-// // // for (let i = 0; i < arr.length; i++) {
-// // //   if(typeof arr[i] == 'number'){
-// // //     sum += arr[i]
+// // let someArr = [1, "Olma", "Anor","2",3, 4];
+// // function checkTypeOfNumber (arr){
+// //   let sum = 0
+// // for (let i = 0; i < arr.length; i++) {
+// //   if(typeof arr[i] == 'number'){
+// //     sum += arr[i]
 
-// // //   }
-// // // }
-// // // return sum
-// // // }
+// //   }
+// // }
+// // return sum
+// // }
 
-// // // console.log(checkTypeOfNumber([1,2,3]));
+// // console.log(checkTypeOfNumber([1,2,3]));
 
 // // // function untillNumber(num){
 // // // let x = 1
