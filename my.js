@@ -41,30 +41,21 @@ function noSpace(x){return x.split(' ').join('')}
  }}
 
 // // let text = 'The quick brown fox jumps over the lazy dog.'
-// // // function reverseText (item) {
 
 function myReverse(str) {
   return str.split("").reverse().join("").split(" ").reverse().join(" ");
  }
 
-// // //  str.split("").reverse().join("").split(" ").reverse().join(" ");
-// // // }
-// // // let resutl = reverseText()
-// // console.log(myReverse(text),"a");
 
-// // const a = [ism: 'Elbek', 'yosh']
-// // a['ism'] = 'Kamol'
 
-// // console.log(a);
-
-// // function isDivideBy(number, x, y) {
-// //   if (number % x === 0 && number % y === 0) {
-// //     return true;
-// //   } else {
-// //     return false;
-// //   }
-// // }
-// // console.log(isDivideBy(12, -1, 4));;
+function isDivideBy(number, x, y) {
+  if (number % x === 0 && number % y === 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(isDivideBy(12, -1, 4));;
 
 // // function ("kitob!")   kitob
 // // function ("sham")   sham
