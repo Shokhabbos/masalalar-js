@@ -60,15 +60,15 @@ console.log(isDivideBy(12, -1, 4));;
 // // function ("kitob!")   kitob
 // // function ("sham")   sham
 
-// // function removeLastEl (str) {
-// //   if(str.slice(-1)  === "!"){
-// //     return str.slice(0, -1)
-// //   }else{
-// //     return str
-// //   }
-// // }
+function removeLastEl (str) {
+  if(str.slice(-1)  === "!"){
+    return str.slice(0, -1)
+  }else{
+    return str
+  }
+}
 
-// // console.log(removeLastEl("Hello! World"));
+console.log(removeLastEl("Hello! World"));
 
 // // let arr = [1, 2, 3, 4, 5, 5, 1, 2];
 // // function x(arr) {
