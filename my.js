@@ -1,45 +1,44 @@
-// // const reverseSeq = n => {
-// //   let arr =[]
-// //   for(let i = n; i > 0; i--){
-// //      arr.push(i)
-// //   }
-// //   return arr
-// // };
+const reverseSeq = n => {
+  let arr =[]
+  for(let i = n; i > 0; i--){
+     arr.push(i)
+  }
+  return arr
+};
 
-// // function findNextSquare(sq) {
-// //   // Return the next square if sq is a perfect square, -1 otherwise
-// //   if(sq**0.5 % 1 === 0){
-// //     return (sq**0.5 +1)**2
-// //   }
-// //   return -1;
-// // }
+function findNextSquare(sq) {
+  // Return the next square if sq is a perfect square, -1 otherwise
+  if(sq**0.5 % 1 === 0){
+    return (sq**0.5 +1)**2
+  }
+  return -1;
+}
 
-// // function trimEl (str){
-// //   let newStr = []
-// //  for(let i = 0; i < str.length;i++){
-// //   str[i] !== " " ? newStr.push(str[i]) : str[i]
-// //  }
-// //  return newStr.join("")
+function trimEl (str){
+  let newStr = []
+ for(let i = 0; i < str.length;i++){
+  str[i] !== " " ? newStr.push(str[i]) : str[i]
+ }
+ return newStr.joi
+}
 
-// // }
-// // function noSpace(x){return x.split(' ').join('')}
 
-// // function updateLight(current) {
+function noSpace(x){return x.split(' ').join('')}
 
-// //   //your code here!
-// //   switch (current){
-// //       case "green" :
-// //       return "yellow";
-// //       break;
-// //       case "yellow" :
-// //       return "red";
-// //       break;
-// //       case "red" :
-// //       return "green"
-// //       break
-// //   }
+ function updateLight(curren){
+   //your code here!
+   switch (current){
+       case "green" :
+       return "yellow";
+       break;
+       case "yellow" :
+       return "red";
+       break;
+       case "red" :
+       return "green"
+       break
 
-// // }
+ }}
 
 // // let text = 'The quick brown fox jumps over the lazy dog.'
 // // // function reverseText (item) {
@@ -295,23 +294,21 @@
 // //     return true;
 // //   };
 
-const isEqualObjs = (obj1, obj2) => {
-    const firstObj = Object.entries(obj1);
-    const secondObj = Object.entries(obj2);
+// const isEqualObjs = (obj1, obj2) => {
+//     const firstObj = Object.entries(obj1);
+//     const secondObj = Object.entries(obj2);
   
-    if (firstObj.length !== secondObj.length) {
-      return false;
-    }
+//     if (firstObj.length !== secondObj.length) {
+//       return false;
+//     }
   
-    for (let i = 0; i < firstObj.length; i++) {
-      const [key1, val1] = firstObj[i];
-      const [key2, val2] = secondObj.find(([key]) => key === key1) || [];
-      if (val1 !== val2) {
-        return false;
-      }
-    }
+//     for (let i = 0; i < firstObj.length; i++) {
+//       const [key1, val1] = firstObj[i];
+//       const [key2, val2] = secondObj.find(([key]) => key === key1) || [];
+//       if (val1 !== val2) {
+//         return false;
+//       }
+//     }
   
-    return true;
-  };
-
-  
+//     return true;
+//   }; 
