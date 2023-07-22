@@ -1,4 +1,3 @@
-function descendingOrder(n){
-  //...
-  return Number(n.toString().split('').sort().reverse().join(''))
+function reverseList(list) {
+ return list.reverse()
 }
