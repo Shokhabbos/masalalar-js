@@ -201,16 +201,16 @@ console.log(checkTypeOfNumber([1,2,3]));
 
 // // // console.log(removeEveryOther(arr2));
 
-// // // function isSquare (num){
-// // //   if(Math.sqrt(num) % 1 !== 0){
-// // //     return false
-// // //   }else{
-// // //     return true
-// // //   }
-// // // }
-// // // // let num = 25
+function isSquare (num){
+  if(Math.sqrt(num) % 1 !== 0){
+    return false
+  }else{
+    return true
+  }
+}
+// let num = 25
 
-// // // console.log(isSquare(-25) );
+console.log(isSquare(-25) );
 
 // // // let str = "auieog ghui i o e"
 // // function isUnli(str){
