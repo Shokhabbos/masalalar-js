@@ -303,3 +303,11 @@ console.log(checkTypeOfNumber([1,2,3]));
   
 //     return true;
 //   }; 
+
+// const food = ['🍕', '🍫', '🥑', '🍔'];
+// const info = { favoriteFood: food[0] };
+
+// info.favoriteFood = '🍝';
+
+// console.log(info);
+// console.log(food);
