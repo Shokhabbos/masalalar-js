@@ -311,3 +311,12 @@ const isEqualObjs = (obj1, obj2) => {
 
 // console.log(info);
 // console.log(food);
+
+function getFull(x, y){
+  const alifbo = ['A','B','C','D','E','F']
+  for(x = 0; y<alifbo.length;i++){
+    console.log(alifbo[i]);
+  }
+}
+
+getFull()
