@@ -187,19 +187,19 @@ console.log(checkTypeOfNumber([1,2,3]));
 
 // // // //   }
 // // // // }
-// // // function removeEveryOther(arr){
-// // // let newArr = []
-// // //   for(let i = 0; i< arr.length;i++){
-// // //     if(i % 2  == 0){
-// // //       newArr.push(arr[i])
+function removeEveryOther(arr){
+let newArr = []
+  for(let i = 0; i< arr.length;i++){
+    if(i % 2  == 0){
+      newArr.push(arr[i])
 
-// // //     }
-// // //   }
-// // //   return newArr
+    }
+  }
+  return newArr
 
-// // // }
+}
 
-// // // console.log(removeEveryOther(arr2));
+console.log(removeEveryOther(arr2));
 
 function isSquare (num){
   if(Math.sqrt(num) % 1 !== 0){
