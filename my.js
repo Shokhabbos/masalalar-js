@@ -178,15 +178,15 @@ console.log(checkTypeOfNumber([1,2,3]));
 // // // //   }
 // // // // console.log(reverseStr(6));
 
-// // // let arr2 = [["salom", 2, 3, "xayr",5, 6, null], [2], 3, 5, "Hello"]
-// // // // let newArr = []
-// // // // for(let i = 0; i< arr.length;i++){
-// // // //   console.log(arr[i], i);
-// // // //   if(i % 2  == 0){
-// // // //     newArr.push(arr[i])
+let arr2 = [["salom", 2, 3, "xayr",5, 6, null], [2], 3, 5, "Hello"]
+// let newArr = []
+// for(let i = 0; i< arr.length;i++){
+//   console.log(arr[i], i);
+//   if(i % 2  == 0){
+//     newArr.push(arr[i])
 
-// // // //   }
-// // // // }
+//   }
+// }
 function removeEveryOther(arr){
 let newArr = []
   for(let i = 0; i< arr.length;i++){
