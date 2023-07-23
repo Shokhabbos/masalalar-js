@@ -1,8 +1,11 @@
-function accum(str) {
-  let letters = str.split('');
-  let result = [];
-  for (var i = 0; i < letters.length; i++) {
-    result.push(letters[i].toUpperCase() + Array(i + 1).join(letters[i].toLowerCase()));
-  }
-  return result.join('-');
-}
+function sortByLength (array) {
+  // Return an array containing the same strings, ordered from shortest to longest
+  
+      let leng= {};
+
+    for(item in array){
+        // leng.push(item.length);
+        leng[array[item].length] = array[item];
+    }
+    return Object.values(leng);
+};
