@@ -1,11 +1,20 @@
-function sortByLength (array) {
-  // Return an array containing the same strings, ordered from shortest to longest
-  
-      let leng= {};
-
-    for(item in array){
-        // leng.push(item.length);
-        leng[array[item].length] = array[item];
-    }
-    return Object.values(leng);
+var Calculator = {
+       add(x, y){
+            return x+y;
+        },
+        subtract(x, y){
+            return x-y;
+        },
+        multiply(x, y){
+            return x*y;
+        },
+     
+        divide(x, y){
+            if(y !== 0){
+                return x/y;
+            }else{
+                return false
+            }
+            
+        }
 };
