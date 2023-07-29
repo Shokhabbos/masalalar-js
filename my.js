@@ -1,28 +1,8 @@
-function greet(language) {
-    let database = {
-      english: 'Welcome',
-  czech: 'Vitejte',
-  danish: 'Velkomst',
-  dutch: 'Welkom',
-  estonian: 'Tere tulemast',
-  finnish: 'Tervetuloa',
-  flemish: 'Welgekomen',
-  french: 'Bienvenue',
-  german: 'Willkommen',
-  irish: 'Failte',
-  italian: 'Benvenuto',
-  latvian: 'Gaidits',
-  lithuanian: 'Laukiamas',
-  polish: 'Witamy',
-  spanish: 'Bienvenido',
-  swedish: 'Valkommen',
-  welsh: 'Croeso'
-   }
-      if(database[language] !== undefined){
-        
-        return database[language]
-      }else{
-        return 'Welcome'
-    }
-      
+
+function powersOfTwo(n){
+  let arr = []
+  for(let i  = 0; i <= n; i++){
+    arr.push(2 ** i)
   }
+  return arr
+}
